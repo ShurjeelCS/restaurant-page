@@ -6,15 +6,19 @@
 }
 
 body {
-  /* background-color: red; */
+  background-color: #a15151;
 }
 
 h1 {
     text-align: center;
+    color: #ffe4e1;
+    font-size: 3rem;
+    margin-bottom: 3rem;
 }
 
 p {
     font-size: 1.5rem;
+    color: rgb(255, 255, 255);
 }
 
 .grid {
@@ -46,5 +50,19 @@ p {
 .right {
     display: flex;
     align-items: center;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    background-color: white;
+    font-size: 2rem;
+    color:#a15151;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    color: white;
+    background-color: #db8482;
 }
 
