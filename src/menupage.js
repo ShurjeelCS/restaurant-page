@@ -13,11 +13,11 @@ function menu() {
     left.classList.add("left");
     const right = document.createElement("div");
     right.classList.add("right");
-    const pcontent = document.createElement("div");
+
     const p = document.createElement("p");
     p.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tempor turpis. Nulla facilisi. Nunc quis urna eget ipsum ullamcorper vulputate. Mauris bibendum accumsan nulla nec consectetur. Mauris accumsan urna vitae mauris consectetur, vel tempor mauris commodo. Pellentesque porttitor sagittis fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed gravida nec leo ac pellentesque. Nam eu augue ut orci tempus gravida sit amet sit amet quam."
-    pcontent.appendChild(p);
-    right.appendChild(pcontent);
+
+    right.appendChild(p);
 
     div.classList.add("row");
     const img1 = document.createElement("img");
@@ -39,12 +39,16 @@ function menu() {
         imgo.src = images[i]; 
         templeft.appendChild(imgo);
 
+        const righty = document.createElement("div");
+        righty.classList.add("right");
+
         const pi = document.createElement("p");
         pi.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut tempor turpis. Nulla facilisi. Nunc quis urna eget ipsum ullamcorper vulputate. Mauris bibendum accumsan nulla nec consectetur. Mauris accumsan urna vitae mauris consectetur, vel tempor mauris commodo. Pellentesque porttitor sagittis fringilla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed gravida nec leo ac pellentesque. Nam eu augue ut orci tempus gravida sit amet sit amet quam.`;
         
+        righty.appendChild(pi);
         
         div.appendChild(templeft);
-        div.appendChild(pi);
+        div.appendChild(righty);
     }
 
     content.appendChild(heading);
