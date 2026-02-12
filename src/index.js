@@ -10,8 +10,20 @@ const content = document.querySelector("#content");
 
 initial();
 
+const homeBtn = document.querySelector("#home");
+homeBtn.addEventListener("click", () => {
+    content.innerHTML = "";
+    initial(); 
+});
+
 const menuBtn = document.querySelector("#menu");
 menuBtn.addEventListener("click", () => {
     content.innerHTML = "";
     menu();
 });
+
+const aboutBtn = document.querySelector("#about");
+aboutBtn.addEventListener("click", () => {
+    content.innerHTML = "";
+});
+
