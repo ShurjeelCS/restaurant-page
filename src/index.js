@@ -3,6 +3,7 @@ import "./styles.css";
 import { greeting } from "./greeting.js";
 import { initial } from "./firstpage.js";
 import {menu} from "./menupage.js";
+import {aboutUs} from "./aboutpage.js";
 
 console.log(greeting);
 
@@ -25,5 +26,6 @@ menuBtn.addEventListener("click", () => {
 const aboutBtn = document.querySelector("#about");
 aboutBtn.addEventListener("click", () => {
     content.innerHTML = "";
+    aboutUs();
 });
 
